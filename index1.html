@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Calculator</title>
+    <style>
+        .form1{
+            background-color: lightblue;
+            border-radius: 25px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Marks</h2>
+    <div class="form1">
+        <form action="/submit-marks" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="sname"> <br> <br>
+            <label for="mmarks">Maths:</label>
+            <input type="text" name="mmarks">
+            <label for="smarks">Science:</label>
+            <input type="text" name="smarks">
+            <label for="cmarks">Computer:</label>
+            <input type="text" name="cmarks"> <br> <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

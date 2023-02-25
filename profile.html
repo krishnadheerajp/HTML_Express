@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        .form1{
+            background-color: lightblue;
+            border-radius: 25px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Profile Page</h2>
+    <div class="form1">
+        <form action="/profile-submission" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="sname"> <br> <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email"> <br> <br>
+            <label for="desg">Designation:</label>
+            <select name="desg" id="desg">
+                <option value="Manager" name="mgr">Manager</option>
+                <option value="Developer" name="dev">Developer</option>
+                <option value="Operator" name="op">Operator</option>
+            </select> <br> <br>
+            <label for="remarks">Remarks:</label>
+            <textarea name="remarks" id="rmk" cols="30" rows="10"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
